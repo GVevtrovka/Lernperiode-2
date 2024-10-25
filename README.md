@@ -1,5 +1,6 @@
 # Lern-Periode 2
-### 25.10 bis 20.12
+
+## 25.10 bis 20.12
 
 ### Grob-Planung
 
