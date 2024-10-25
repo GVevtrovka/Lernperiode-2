@@ -7,5 +7,5 @@ In diesem Modul möchte ich Pac Man nachprogrammieren mit einem funktionstüchti
 Womöglich wird es auch nur das erste Level, aber dies sollte auf jeden Fall funktionieren
 
 ### 25.10.2025
-[ ] Mich informieren, über Schwierigkeiten usw.
-[ ] Erste prototypen bauen.
+- [ ] Mich informieren, über Schwierigkeiten usw.
+- [ ] Erste prototypen bauen.
