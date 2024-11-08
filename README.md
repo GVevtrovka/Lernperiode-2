@@ -22,6 +22,7 @@ Heute kam ich aufgrung einem Fehler nur träge voran.
 ### 8.11.2024
 - [x] Das Grunddesign fertig designen.
 - [x] Cursor Position Problem lösen.
+
 Habe gerade in den letsten Minuten das Cursor Problem gelöst!
 
 ### 16.11.2024
