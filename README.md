@@ -18,3 +18,7 @@
 - [ ] Das Gestell finalisieren
 - [ ] neue techniken erforschen
 Heute kam ich aufgrung einem Fehler nur träge voran.
+
+### 8.11.2024
+- [ ] Das Grunddesign fertig designen
+- [ ] Hitbox einführen
