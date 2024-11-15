@@ -26,6 +26,8 @@ Heute kam ich aufgrung einem Fehler nur träge voran.
 Habe gerade in den letsten Minuten das Cursor Problem gelöst!
 
 ### 16.11.2024
-- [ ] Bälle endlich einführen
-- [ ] Denkey Kong herstellen
-- [ ] Figur finden. 
+- [x] Mario erstellt.
+- [x] Neue Funktion für Gerüst
+- [x] Mit xpos/ypos beginnen.
+
+Obwohl das Cursor-Problem heute nochmals auftrat konnte ich dieses relativ schnell lösen und ich habe eine Mario Figor erstellt, welche funktionieren sollte. Zusätzlich habe ich heute die Gerüste (Bild) in eine eigene Funktion verschoben, sodass es übersichtlicher sein sollte.
