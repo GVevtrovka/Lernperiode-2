@@ -31,3 +31,9 @@ Habe gerade in den letsten Minuten das Cursor Problem gelöst!
 - [x] Mit xpos/ypos beginnen.
 
 Obwohl das Cursor-Problem heute nochmals auftrat konnte ich dieses relativ schnell lösen und ich habe eine Mario Figor erstellt, welche funktionieren sollte. Zusätzlich habe ich heute die Gerüste (Bild) in eine eigene Funktion verschoben, sodass es übersichtlicher sein sollte.
+
+### 22.11.2024
+- [x] Funktionen repariert, sodass bestimmte Variablen von allen Funktonen aus erreichbar sind.
+- [x] Ball design gemacht
+- [x] Threads eingebaut.
+Ich kam heute zwar wage voran, habe aber eintscheidende Änderungen vorgenommen, welche das Programm richtung Erfolg verbessert haben. Ich hoffe jedoch, dass ich mein Programm noch beenden kann vor den Winterferien.  
