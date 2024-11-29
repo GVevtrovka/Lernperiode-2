@@ -36,4 +36,10 @@ Obwohl das Cursor-Problem heute nochmals auftrat konnte ich dieses relativ schne
 - [x] Funktionen repariert, sodass bestimmte Variablen von allen Funktonen aus erreichbar sind.
 - [x] Ball design gemacht
 - [x] Threads eingebaut.
-Ich kam heute zwar wage voran, habe aber eintscheidende Änderungen vorgenommen, welche das Programm richtung Erfolg verbessert haben. Ich hoffe jedoch, dass ich mein Programm noch beenden kann vor den Winterferien.  
+Ich kam heute zwar wage voran, habe aber eintscheidende Änderungen vorgenommen, welche das Programm richtung Erfolg verbessert haben. Ich hoffe jedoch, dass ich mein Programm noch beenden kann vor den Winterferien.
+
+### 29.11.2024
+- [x] Hin und herbewegung auf x-achse funktioniert
+- [x] xpos und ypos ind funktionstüchtig und machen ihren job
+- [x] Grafik kommt nicht mehr durcheinander.
+Ich bin heute recht schnell vorangekommen und habe einen ersichtlichen Fortschritt im Programm erzielt.  
