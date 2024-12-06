@@ -43,3 +43,10 @@ Ich kam heute zwar wage voran, habe aber eintscheidende Änderungen vorgenommen,
 - [x] xpos und ypos ind funktionstüchtig und machen ihren job
 - [x] Grafik kommt nicht mehr durcheinander.
 Ich bin heute recht schnell vorangekommen und habe einen ersichtlichen Fortschritt im Programm erzielt.  
+
+### 6.12.2024
+- [x] Programm flüssiger laufen lassen.
+  - [x] Thread.Sleep perfekt einstellen, um lags zu verhindern. (habe esch schlussendlich koomplett entfernt.)
+- [x] Alle kleinen Bugs entfernen.
+- [x] Ball movement möglich machen.
+Ich habe heute einen Bugbehoben, welcher mich shcon seit längerer Zeit beschäftigt hat. Ich habe dies schon seit etwa 2 Wochen probiert. Im ganzen und guten bin ich extem stolz auf mich, diesen Lag zu reparieren.
