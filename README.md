@@ -50,3 +50,13 @@ Ich bin heute recht schnell vorangekommen und habe einen ersichtlichen Fortschri
 - [x] Alle kleinen Bugs entfernen.
 - [x] Ball movement möglich machen.
 Ich habe heute einen Bugbehoben, welcher mich shcon seit längerer Zeit beschäftigt hat. Ich habe dies schon seit etwa 2 Wochen probiert. Im ganzen und guten bin ich extem stolz auf mich, diesen Lag zu reparieren.
+
+### 13.12.2024
+- [ ] Programm flüssiger laufen lassen.
+  - [ ] Lösung für Programmlags finden.
+Ich hatte die ganze Sache versucht mit async Tasks zu verbessern, was mir jedoch mehr Probleme als iergendetwas anderes gebracht hatte.
+
+### 20.12.2024
+- [ ] Basiert auf eine ältere und bewährte Version des Programmes greifen und diese verbessern.
+- [ ] Eine bessere Grafik herausholen.
+- [ ] Klettern "endlich" möglich machen.
