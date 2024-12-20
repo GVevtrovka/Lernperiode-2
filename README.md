@@ -57,6 +57,10 @@ Ich habe heute einen Bugbehoben, welcher mich shcon seit längerer Zeit beschäf
 Ich hatte die ganze Sache versucht mit async Tasks zu verbessern, was mir jedoch mehr Probleme als iergendetwas anderes gebracht hatte.
 
 ### 20.12.2024
-- [ ] Basiert auf eine ältere und bewährte Version des Programmes greifen und diese verbessern.
-- [ ] Eine bessere Grafik herausholen.
+- [x] Basiert auf eine ältere und bewährte Version des Programmes greifen und diese verbessern.
+- [x] Eine bessere Grafik herausholen.
 - [ ] Klettern "endlich" möglich machen.
+Leider konnte ich dieses Programm heute nicht mehr beenden, da ich mit der Reparatur der Steuerung sehr viel Zeit verschlungen habe. Deshab ist mein Projekt jetzt noch nicht ferteig. Jedoch gebe ich noch nicht so schnell auf und werde versuchen dieses zu beenden.
+
+## Reflexion
+Trotz den Vielen Rückschlägen und den jetzt noch immer nicht 100% vollendeten Projekt habe ich in diesem Modul etwas hinzugelern. Beispielsweise habe ich async tasks versucht anzuwenden (wenn auch nicht 100% erfolgreich) und verstehe wenigstens wo ich personlich diese anwenden könnte. Ich wendete zum ersten mal seit ich C# programmiere public funktionen und public variablen an. Somit habe ich in diesem Modul einiges dazugelernt. Auch in diesem Modul habe ich keine künstliche Intelligenz verwendet um direkt eine Lösung zu erstellen, hingegen habe ich Künstliche Intelligenz als Inspiration/Hilfestellung benutzt wenn ich sonstwo nicht mit aufhieb auf eine Lösung stiess.
