@@ -19,7 +19,6 @@ namespace Donkeykong
         public static bool GameRunning = true;
         public static int xposBall2;
         public static int yposBall2;
-        //public static bool Aenderung = false;
         public static void Main()
         {
             Console.OutputEncoding = Encoding.UTF8;
@@ -59,104 +58,10 @@ namespace Donkeykong
             while (GameRunning == true)
             {
                 Console.SetCursorPosition(0, 0);
-                /*if (Aenderung == true)
-                {*/
                 Structure();
-                //Thread.Sleep(5);
                 Mario();
-                //Thread.Sleep(5);
                 Ball();
                 Thread.Sleep(30);
-               /* Console.WriteLine();
-                Console.WriteLine();
-                Console.WriteLine();
-                Console.WriteLine();
-                Console.WriteLine("▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁");
-                Console.WriteLine("╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳");
-                Console.WriteLine("▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔");
-                Console.WriteLine();
-                Console.WriteLine();
-                Console.WriteLine();
-                Console.WriteLine();
-                Console.WriteLine("▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁");
-                Console.WriteLine("╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳");
-                Console.WriteLine("▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔");
-                Console.WriteLine();
-                Console.WriteLine();
-                Console.WriteLine();
-                Console.WriteLine();
-                Console.WriteLine("▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁");
-                Console.WriteLine("╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳");
-                Console.WriteLine("▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔┣━━━┫▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔");
-                Console.WriteLine("                                               ┣━━━┫                                                                                                        ");
-                Console.WriteLine("                                               ┣━━━┫                                                                                                        ");
-                Console.WriteLine("                                               ┣━━━┫                                                                                                        ");
-                Console.WriteLine("                                               ┣━━━┫                                                                                                        ");
-                Console.WriteLine("▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁┣━━━┫▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁");
-                Console.WriteLine("╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳");
-                Console.WriteLine("▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔");
-                Console.WriteLine();
-                Console.WriteLine();
-                Console.WriteLine();
-                Console.WriteLine();
-                Console.WriteLine("▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁");
-                Console.WriteLine("╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳");
-                Console.WriteLine("▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔");*/
-                //Thread.Sleep(10);
-                //break
-                /*Console.SetCursorPosition(xposBall, yposBall);
-                Console.BackgroundColor = ConsoleColor.Black;
-                Console.Write("  ");
-                Console.BackgroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("  ");
-                Console.BackgroundColor = ConsoleColor.Yellow;
-                Console.Write("  ");
-                Console.BackgroundColor = ConsoleColor.DarkYellow;
-                Console.Write("  ");
-                Console.BackgroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("  ");
-                Console.BackgroundColor = ConsoleColor.Black;
-                Console.Write("  ");
-                Console.BackgroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("  ");
-                Console.ResetColor();*/
-                //break
-                /*xposMario2 = xposMario;
-                yposMario2 = yposMario;
-                Console.SetCursorPosition(xposMario2, yposMario2);
-                yposMario2++;
-                Console.SetCursorPosition(xposMario2, yposMario2);
-                Console.BackgroundColor = ConsoleColor.Black;
-                Console.Write(" ");
-                Console.BackgroundColor = ConsoleColor.Red;
-                Console.Write(" ");
-                Console.BackgroundColor = ConsoleColor.White;
-                Console.Write(" ");
-                Console.BackgroundColor = ConsoleColor.Red;
-                Console.Write(" ");
-                yposMario2++;
-                Console.SetCursorPosition(xposMario2, yposMario2);
-                Console.Write(" ");
-                Console.BackgroundColor = ConsoleColor.Blue;
-                Console.Write(" ");
-                Console.BackgroundColor = ConsoleColor.Red;
-                Console.Write(" ");
-                Console.BackgroundColor = ConsoleColor.Blue;
-                Console.Write(" ");
-                Console.BackgroundColor = ConsoleColor.Red;
-                Console.Write(" ");
-                yposMario2++;
-                Console.SetCursorPosition(xposMario2, yposMario2);
-                Console.BackgroundColor = ConsoleColor.Black;
-                Console.Write(" ");
-                Console.BackgroundColor = ConsoleColor.Blue;
-                Console.Write("   ");
-                yposMario2++;
-                Console.SetCursorPosition(xposMario2, yposMario2);
-                Console.BackgroundColor = ConsoleColor.Black;
-                Thread.Sleep(40);*/
-                //Aenderung = false;
-                //}
             }
         }
 
@@ -171,21 +76,18 @@ namespace Donkeykong
                         if (xposMario <= 19 && xposMario >= 25 && yposMario <= 24 && yposMario >= 12)
                         {
                             yposMario += 5;
-                            //Aenderung = true;
                         }
                         else
                         {
                             yposMario -= 3;
                             Thread.Sleep(300);
                             yposMario += 3;
-                            //Aenderung = true;
                         }
                         break;
                     case 'a':
                         if (xposMario >= 1 && xposMario <= 151)
                         {
                             xposMario--;
-                            //Aenderung = true;
                         }
                         break;
                     case 's':
@@ -195,7 +97,6 @@ namespace Donkeykong
                         if (xposMario >= 0 && xposMario <= 150)
                         {
                             xposMario++;
-                            //Aenderung = true;
                         }
                         break;
                     default:
@@ -241,7 +142,6 @@ namespace Donkeykong
             yposMario2++;
             Console.SetCursorPosition(xposMario2, yposMario2);
             Console.BackgroundColor = ConsoleColor.Black;
-            //Thread.Sleep(20);
         }
         public static void Ball()
         {
@@ -267,12 +167,10 @@ namespace Donkeykong
             yposBall2++;
             Console.SetCursorPosition (xposBall2, yposBall2);
             Console.ResetColor();
-            //Thread.Sleep(20);
         }
         public static void Structure()
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            //Console.Clear();
             Console.WriteLine("                                                                                                                                                            ");
             Console.WriteLine("                                                                                                                                                            ");
             Console.WriteLine("                                                                                                                                                            ");
